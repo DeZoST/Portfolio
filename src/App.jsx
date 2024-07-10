@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
+import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentSection, setCurrentSection] = useState("home");
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  const renderSection = () => {
+    switch (currentSection) {
+      case "about":
+        return <About />;
+      case "projects":
+        return <Projects />;
+      case "skills":
+        return <Skills />;
+      case "contact":
+        return <Contact />;
+      default:
+        return <Home setCurrentSection={setCurrentSection} />;
+    }
+  };
+
+  return <main className="App">{renderSection()}</main>;
 }
 
-export default App
+export default App;
