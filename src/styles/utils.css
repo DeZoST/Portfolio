@@ -166,6 +166,10 @@ input {
   .container {
     max-width: 40rem;
   }
+
+  .section__button {
+    width: 12rem;
+  }
 }
 
 /* MD */
