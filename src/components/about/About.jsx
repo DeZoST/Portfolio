@@ -1,18 +1,25 @@
 import Section from "../section/Section";
 import styles from "./About.module.css";
+import BackButton from "../back-button/BackButton";
+import PropTypes from "prop-types";
 
-const About = () => {
+const About = ({ onBack }) => {
   return (
-    <Section title="À PROPOS">
-      <div className={styles.aboutContent}>
+    <>
+      <BackButton onBack={onBack} className={styles.about__backButton} />
+      <Section title="À PROPOS" className={styles.about__section}>
         <div className={styles.photo}>PHOTO</div>
         <p className={styles.description}>
           Texte qui décrit Texte qui décrit Texte qui décrit Texte qui décrit
           Texte qui décrit Texte qui décrit Texte qui décrit Texte qui décrit
         </p>
-      </div>
-    </Section>
+      </Section>
+    </>
   );
+};
+
+About.propTypes = {
+  onBack: PropTypes.func.isRequired,
 };
 
 export default About;

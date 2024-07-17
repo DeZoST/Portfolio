@@ -1,8 +1,10 @@
 import Section from "../section/Section";
 import ProjectCard from "./project-card/ProjectCard";
 import styles from "./Projects.module.css";
+import BackButton from "../back-button/BackButton";
+import PropTypes from "prop-types";
 
-const Projects = () => {
+const Projects = ({ onBack }) => {
   const projectList = [
     { title: "Projet 1", description: "Description du projet 1" },
     { title: "Projet 2", description: "Description du projet 2" },
@@ -10,18 +12,26 @@ const Projects = () => {
   ];
 
   return (
-    <Section title="PROJETS">
-      <div className={styles.projectList}>
-        {projectList.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-          />
-        ))}
-      </div>
-    </Section>
+    <>
+      <BackButton onBack={onBack} />
+
+      <Section title="PROJETS">
+        <div className={styles.projectList}>
+          {projectList.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+            />
+          ))}
+        </div>
+      </Section>
+    </>
   );
+};
+
+Projects.propTypes = {
+  onBack: PropTypes.func.isRequired,
 };
 
 export default Projects;

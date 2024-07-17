@@ -11,13 +11,13 @@ function App() {
   const renderSection = () => {
     switch (currentSection) {
       case "about":
-        return <About />;
+        return <About onBack={() => setCurrentSection("home")} />;
       case "projects":
-        return <Projects />;
+        return <Projects onBack={() => setCurrentSection("home")} />;
       case "skills":
-        return <Skills />;
+        return <Skills onBack={() => setCurrentSection("home")} />;
       case "contact":
-        return <Contact />;
+        return <Contact onBack={() => setCurrentSection("home")} />;
       default:
         return <Home setCurrentSection={setCurrentSection} />;
     }
