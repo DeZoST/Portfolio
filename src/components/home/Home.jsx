@@ -1,4 +1,4 @@
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 import SectionButton from "./section-button/SectionButton";
 import { FaInfo, FaProjectDiagram, FaTools, FaEnvelope } from "react-icons/fa";
 import styles from "./Home.module.css";
@@ -22,7 +22,6 @@ const Home = ({ setCurrentSection }) => {
         <h1 className={styles.home__title}>ALEXIS</h1>
         <h2 className={styles.home__subtitle}>Développeur Front-End</h2>
       </div>
-
       <nav className={styles.home__buttons_container}>
         <SectionButton
           label="Projets"
@@ -40,7 +39,7 @@ const Home = ({ setCurrentSection }) => {
 };
 
 Home.propTypes = {
-  setCurrentSection: PropType.func.isRequired,
+  setCurrentSection: PropTypes.func.isRequired,
 };
 
 export default Home;
