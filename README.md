@@ -4,35 +4,23 @@ Bienvenue sur mon portfolio ! Je suis un développeur front-end passionné par l
 
 ## 🎨 Projets
 
-### 1. [Projet Awesome](https://github.com/votre-username/projet-awesome)
+### 1. [Projet Pixel Perfect](https://github.com/DeZoST/designer-portfolio-project)
 
-Un projet où j'ai créé une application web réactive et accessible.
+Un projet qui lie Front-End et Back-End, qui est un mini-jeu en temps réel (plus d'info dans le repo).
 
-- **Tech Stack :** HTML, CSS, JavaScript, React
-- **Fonctionnalités :**
-  - Interface utilisateur réactive
-  - Accessibilité améliorée
-  - Intégration d'une API externe
+- **Tech Stack :** HTML, CSS, JavaScript, React, Node.js, SQL, Express.js, Websocket
 
-### 2. [Projet Portfolio](https://github.com/votre-username/projet-portfolio)
+### 2. [Projet Designer Portfolio](https://github.com/DeZoST/designer-portfolio-project)
 
-Mon portfolio personnel, un site web statique présentant mes compétences et projets.
+Un site web statique, qui représente un portfolio pour un designer.
 
 - **Tech Stack :** HTML, CSS, JavaScript
-- **Fonctionnalités :**
-  - Design moderne et épuré
-  - Formulaire de contact fonctionnel
-  - Optimisation SEO
 
-### 3. [Projet eCommerce](https://github.com/votre-username/projet-ecommerce)
+### 3. [Projet Tip Calculator](https://github.com/DeZoST/tip-calculator-app)
 
-Une plateforme de e-commerce complète avec un système de panier et de paiement.
+Un site avec une "calculatrice" permettant de calculer l'addition avec les pourboires en plus.
 
-- **Tech Stack :** HTML, CSS, JavaScript, Vue.js
-- **Fonctionnalités :**
-  - Gestion du panier d'achat
-  - Système de paiement sécurisé
-  - Interface utilisateur intuitive
+- **Tech Stack :** HTML, CSS, JavaScript
 
 ## 🛠️ Compétences Techniques
 
