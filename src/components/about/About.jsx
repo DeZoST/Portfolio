@@ -8,8 +8,8 @@ const About = ({ onBack }) => {
     <>
       <BackButton onBack={onBack} className={styles.about__backButton} />
       <Section title="À PROPOS" className={styles.about__section}>
-        <div className={styles.photo}>PHOTO</div>
-        <p className={styles.description}>
+        <picture className={styles.about__photo}>PHOTO</picture>
+        <p className={styles.about__description}>
           Texte qui décrit Texte qui décrit Texte qui décrit Texte qui décrit
           Texte qui décrit Texte qui décrit Texte qui décrit Texte qui décrit
         </p>
