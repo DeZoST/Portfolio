@@ -1,5 +1,6 @@
 .section__title {
   color: var(--clr-beige);
-  font-size: clamp(var(--fs-2xl), 5vw, var(--fs-6xl));
+  font-size: clamp(var(--fs-4xl), 5vw, var(--fs-6xl));
   text-shadow: 0.5rem 0 0.5rem #000;
+  text-align: center;
 }
