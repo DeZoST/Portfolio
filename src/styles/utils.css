@@ -145,14 +145,12 @@ input {
   padding: 2rem;
   background-color: var(--clr-transparent-bg-active);
   border-radius: 8px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(88, 83, 87, 0.5);
-  transition: all 0.3s ease;
-}
-
-.section:hover {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
   border: 2px solid rgba(88, 83, 87, 1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .App {
