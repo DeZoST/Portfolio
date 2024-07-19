@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio ! Je suis un développeur front-end passionné par l
 
 ## 🎨 Projets
 
-### 1. [Projet Pixel Perfect](https://github.com/DeZoST/designer-portfolio-project)
+### 1. [Projet Pixel Perfect](https://github.com/DeZoST/pixel-perfect)
 
 Un projet qui lie Front-End et Back-End, qui est un mini-jeu en temps réel (plus d'info dans le repo).
 
